@@ -1,6 +1,5 @@
-package com.example.mvp_mvvm_project.domain.UseCase
+package com.example.mvp_mvvm_project.data.database
 
-import com.example.mvp_mvvm_project.data.database.AccountEntity
 import com.example.mvp_mvvm_project.domain.entities.UserProfile
 
 fun convertAccountToEntities(account: AccountEntity): UserProfile {

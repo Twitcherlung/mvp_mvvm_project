@@ -43,11 +43,11 @@ class ForgetPasswordFragment :
     }
 
     override fun showProgress() {
-        binding.progress.isVisible = true
+        binding.progressBar.isVisible = true
     }
 
     override fun hideProgress() {
-        binding.progress.isVisible = false
+        binding.progressBar.isVisible = false
     }
 
     override fun setSuccess() {

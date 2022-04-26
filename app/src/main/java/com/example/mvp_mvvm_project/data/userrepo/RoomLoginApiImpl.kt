@@ -3,7 +3,7 @@ package com.example.mvp_mvvm_project.data.userrepo
 import com.example.mvp_mvvm_project.data.database.*
 import com.example.mvp_mvvm_project.domain.LoginApi
 import com.example.mvp_mvvm_project.domain.entities.UserProfile
-import com.example.mvp_mvvm_project.domain.UseCase.convertAccountToEntities
+import com.example.mvp_mvvm_project.data.database.convertAccountToEntities
 
 class RoomLoginApiImpl(private val localDataSource: AccountsDao) : LoginApi {
 

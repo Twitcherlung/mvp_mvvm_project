@@ -11,7 +11,7 @@
         android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guide_line_login"
+            android:id="@+id/login_guide_line"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -23,8 +23,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_input_margin"
             android:hint="@string/user_hint"
-            app:layout_constraintBottom_toTopOf="@+id/guide_line_login"
-            app:layout_constraintTop_toTopOf="@+id/guide_line_login"
+            app:layout_constraintBottom_toTopOf="@+id/login_guide_line"
+            app:layout_constraintTop_toTopOf="@+id/login_guide_line"
             app:startIconDrawable="@drawable/ic_sharp_person_outline_24">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -95,7 +95,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ProgressBar
-        android:id="@+id/progress"
+        android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

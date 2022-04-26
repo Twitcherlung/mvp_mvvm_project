@@ -66,11 +66,11 @@ class LoginFragment :
     }
 
     override fun showProgress() {
-        binding.progress.isVisible = true
+        binding.progressBar.isVisible = true
     }
 
     override fun hideProgress() {
-        binding.progress.isVisible = false
+        binding.progressBar.isVisible = false
     }
 
     override fun setSuccess() {
@@ -80,7 +80,7 @@ class LoginFragment :
     override fun showError(error: Exception) {
         val text = when (error) {
             is SignInException -> {
-                getString(R.string.error_sig_in)
+                getString(R.string.error_sign_in)
             }
             is PasswordException -> {
                 getString(R.string.error_password_empty)
@@ -97,7 +97,7 @@ class LoginFragment :
     }
 
     override fun loadAccountData(account: UserProfile) {
-        Toast.makeText(context, getString(R.string.success_sig_in), Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, getString(R.string.success_sign_in), Toast.LENGTH_SHORT).show()
     }
 
     override fun onDestroy() {
