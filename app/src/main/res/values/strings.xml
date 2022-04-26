@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">mvp_mvvm_project</string>
+    <string name="app_name">mvp_mvvm</string>
+    <string name="password_hint">Пароль</string>
+    <string name="email_hint">Почта</string>
+    <string name="user_hint">Имя пользователя</string>
+    <string name="forgot_password_text">Забыли пароль?</string>
+    <string name="login_text">Вход</string>
+    <string name="create_text">Создать аккаунт</string>
+    <string name="registration_text">Зарегистрироваться</string>
+    <string name="error_sig_in">Неверный логин или пароль!</string>
+    <string name="error_registration">Пользователь с таким имененм или почтой уже существует</string>
+    <string name="error_forget_password">Пользователь с такой почтой не существует</string>
+    <string name="error_login_empty">Логин не может быть пустым</string>
+    <string name="error_password_empty">Пароль не может быть пустым</string>
+    <string name="error_email_empty">Email не может быть пустым</string>
+    <string name="success_sig_in">Авторизация прошла успешно</string>
+    <string name="success_registration">Регистрация прошла успешно</string>
+    <string name="unexpected_error_occurred">Непредвиденная ошибка</string>
+    <string name="forgot_password_message">Введите логин или e-mail</string>
+    <string name="restore">Восстановить</string>
 </resources>
