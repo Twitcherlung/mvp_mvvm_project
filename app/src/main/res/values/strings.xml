@@ -18,4 +18,6 @@
     <string name="unexpected_error_occurred">Непредвиденная ошибка</string>
     <string name="forgot_password_message">Введите логин или e-mail</string>
     <string name="restore">Восстановить</string>
+    <string name="success_forget_password">Сброс пароля прошел успешно</string>
+
 </resources>

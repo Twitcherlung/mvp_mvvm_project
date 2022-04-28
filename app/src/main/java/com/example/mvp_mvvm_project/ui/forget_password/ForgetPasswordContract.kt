@@ -1,19 +1,12 @@
 package com.example.mvp_mvvm_project.ui.forget_password
 
-import com.example.mvp_mvvm_project.domain.entities.UserProfile
+import com.example.mvp_mvvm_project.utils.AppState
+import com.example.mvp_mvvm_project.utils.Publisher
 
 class ForgetPasswordContract {
-    interface ForgetPasswordViewInterface {
-        fun showProgress()
-        fun hideProgress()
-        fun setSuccess()
-        fun showError(error: Exception)
-        fun forgetPasswordData(account: UserProfile)
-    }
-
-    interface ForgetPasswordPresenterInterface  {
-        fun onAttachView(view: ForgetPasswordViewInterface)
+    interface ViewModel {
+        fun getLiveData(): Publisher<AppState>
         fun findAccount(email: String)
-        fun onDetach()
+
     }
 }
