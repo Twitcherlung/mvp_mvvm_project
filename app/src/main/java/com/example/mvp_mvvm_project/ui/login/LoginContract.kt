@@ -1,20 +1,13 @@
 package com.example.mvp_mvvm_project.ui.login
 
 import com.example.mvp_mvvm_project.domain.entities.UserProfile
+import com.example.mvp_mvvm_project.utils.AppState
+import com.example.mvp_mvvm_project.utils.Publisher
 
 
 class LoginContract {
-    interface LoginViewInterface {
-        fun showProgress()
-        fun hideProgress()
-        fun setSuccess()
-        fun showError(error: Exception)
-        fun loadAccountData(account: UserProfile)
-    }
-
-    interface LoginPresenterInterface  {
-        fun onAttachView(view: LoginViewInterface)
+    interface ViewModel {
+        fun getLiveData() : Publisher<AppState>
         fun onLogin(login: String, password: String)
-        fun onDetach()
     }
 }

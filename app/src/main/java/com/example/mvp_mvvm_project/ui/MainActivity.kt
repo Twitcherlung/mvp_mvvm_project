@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity(), NavigationActivity {
                 R.anim.push_up_in,
                 R.anim.slide_out
             )
-            .replace(R.id.container, fragment)
+            .replace(R.id.container_layout, fragment)
 
         if (withTransaction) {
             transaction.addToBackStack("Transaction")
